@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "dbb0205d-573a-4ebd-a1b5-af224e161ccd",
+		"name": "Litera",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Double Booked",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"events\": [\n        {\n            \"id\": 1,\n            \"start\": \"2023-02-02 13:00\",\n            \"end\": \"2023-02-02 14:00\",\n            \"timezone\": \"America/Bogota\"\n        },\n        {\n            \"id\": 2,\n            \"start\": \"2023-02-02 16:00\",\n            \"end\": \"wrong\",\n            \"timezone\": \"America/Bogota\"\n        },\n        {\n            \"id\": 3,\n            \"start\": \"2023-02-02 13:45\",\n            \"end\": \"2023-02-02 16:15\",\n            \"timezone\": \"America/Bogota\"\n        },\n        {\n            \"id\": 4,\n            \"start\": \"2023-02-02 16:15\",\n            \"end\": \"2023-02-02 18:00\",\n            \"timezone\": \"America/Bogota\"\n        },\n        {\n            \"id\": 5,\n            \"start\": \"2023-02-02 12:00\",\n            \"end\": \"2023-02-02 13:15\",\n            \"timezone\": \"America/Bogota\"\n        },\n        {\n            \"id\": 6,\n            \"start\": \"2023-02-02 12:00\",\n            \"end\": \"2023-02-02 13:15\",\n            \"timezone\": \"Europe/Berlin\"\n        }\n    ]\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ej9tdxxljk.execute-api.us-east-1.amazonaws.com/dev/v1",
+					"protocol": "https",
+					"host": [
+						"ej9tdxxljk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
